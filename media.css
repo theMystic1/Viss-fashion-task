@@ -98,12 +98,12 @@ html {
   }
 
   .list--sect {
-    background-color: rgba(255, 255, 255, 0.99);
+    background-color: #44c3eb;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    height: 35rem;
+    height: 30rem;
     z-index: 500;
     flex-direction: column;
     justify-content: center;
@@ -114,6 +114,8 @@ html {
     pointer-events: none;
     visibility: hidden;
     transition: all 600ms;
+
+    box-shadow: 0, 1rem 1rem -1rem rgba(0, 0, 0, 0.8);
   }
 
   .open-nav {
@@ -121,7 +123,6 @@ html {
     pointer-events: auto;
     visibility: visible;
     transform: translateY(0);
-    box-shadow: 0, 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
   }
 
   .right-sect {
@@ -147,6 +148,7 @@ html {
   .btn,
   .span {
     font-size: 1.8rem;
+    color: #ffff;
   }
 
   .hero--section {
