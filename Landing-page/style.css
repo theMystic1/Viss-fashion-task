@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* overflow-y: hidden; */
+}
+
+/* ::-webkit-scrollbar {
+  overflow: hidden;
+} */
+
+:root {
+  --primary--color: #ffff;
+  --secondary--color: #e87a14;
+  --tertiary--color: #44c3eb;
+  --black--color: #000;
+}
+
+/* GENERAL STYLES */
+.section {
+  padding: 0 9.6rem;
+}
+
+/* styles */
+
+.navigation {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--hmbgr {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.list--sect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-sect {
+  margin-right: 2rem;
+}
+
+.menu,
+.remove {
+  font-size: 2.8rem;
+}
+
+.h2 {
+  font-size: 1.8rem;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+}
+
+.ul li,
+.span {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.ul li a,
+.btn,
+.span {
+  text-decoration: none;
+  color: var(--black--color);
+  font-size: 1.6rem;
+  transition: color 600ms;
+}
+
+.ul li,
+.btn,
+.span {
+  cursor: pointer;
+}
+
+.span:hover,
+.ul li a:hover {
+  color: var(--secondary--color);
+}
+
+.btn {
+  background-color: var(--secondary--color);
+  color: var(--primary--color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 600ms;
+}
+
+.btn:hover {
+  color: var(--secondary--color);
+  background-color: var(--primary--color);
+  border: 0.1rem solid var(--secondary--color);
+}
+
+.hero--section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem 0;
+}
+
+.left--hero {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 50vh; */
+  max-width: 40rem;
+}
+
+.p {
+  font-size: 2.2rem;
+  color: var(--tertiary--color);
+  margin-bottom: 2rem;
+}
+
+.h3 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+
+.right--hero {
+  max-width: 60rem;
+  display: flex;
+  justify-content: center;
+}
+
+.right--hero img {
+  width: 70%;
+}
+
+/* 
+ LOGIN AND SIGN UP STYLES
+*/
+
+.section--sgnup {
+  /* background image */
+  background: url(/img/Backdrop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  /* styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  right: 0;
+
+  transition: all 600ms ease-in;
+}
+
+.hide {
+  display: none;
+}
+
+.xx {
+  position: absolute;
+  top: 2rem;
+  font-size: 3rem;
+  right: 5rem;
+  background-color: transparent;
+  border: none;
+  color: var(--primary--color);
+}
+
+.login-signup {
+  width: 80%;
+}
+
+.overLay-secct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
+  height: 80vh;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.left-overlay {
+  /* max-width: 45rem; */
+  background-color: var(--primary--color);
+  height: 80vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  /* flex-direction: colum; */
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up {
+  /* width: 30rem; */
+}
+
+.immg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.h-two,
+.pp {
+  text-align: center;
+}
+
+.h-two {
+  font-size: 1.8rem;
+}
+
+.pp {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.spn {
+  border: 0.1rem solid var(--black--color);
+  display: flex;
+  /* justify-content: space-between;
+   */
+  padding: 0.5rem 2rem;
+  align-items: center;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.text-lgn {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.spn img {
+  width: 2.4rem;
+  border-radius: 50%;
+}
+
+.right-overlay {
+  max-width: 50rem;
+  /* background: url(/img/Image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 80vh;
+}
+
+.right-overlay img {
+  width: 100%;
+  height: 80vh;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+/* .hidden,
+.section--sgnup {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.login-display .section--sgnup {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+  position: relative;
+  top: 9rem;
+} */
