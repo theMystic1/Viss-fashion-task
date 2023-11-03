@@ -38,8 +38,9 @@ signupBtn.addEventListener('click', function () {
   }
 });
 
-btnxx.addEventListener('click', function () {
-  section2.scrollIntoView(options);
+btnxx.addEventListener('click', function (e) {
+  e.preventDefault();
+  section1.scrollIntoView(options);
 });
 
 // media query
