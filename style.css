@@ -118,6 +118,13 @@ body {
   border: 0.1rem solid var(--secondary--color);
 }
 
+.section-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero--section {
   display: grid;
   grid-template-columns: 1fr 1fr;
