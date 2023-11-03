@@ -21,6 +21,8 @@ signupBtn.addEventListener('click', function () {
 
     menu.classList.remove('open-nav');
     section3.scrollIntoView(options);
+  } else {
+    section3.scrollIntoView(options);
   }
 });
 
