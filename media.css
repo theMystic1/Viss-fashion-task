@@ -20,7 +20,7 @@ html {
   }
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 51.25rem) {
   .section {
     padding: 0 4.8rem;
   }
