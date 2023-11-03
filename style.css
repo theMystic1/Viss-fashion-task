@@ -151,7 +151,7 @@ body {
 
 .section--sgnup {
   /* background image */
-  background: url(/img/Backdrop.png);
+  background: url(img/Backdrop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
