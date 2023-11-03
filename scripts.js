@@ -9,17 +9,29 @@ const section3 = document.getElementById('section3');
 const menu = document.querySelector('.list--sect');
 const menuIcon = document.querySelector('.menu');
 const removeIcon = document.querySelector('.remove');
+
+const overlay = document.querySelector('.overlay');
 // events
+
+const openNav = function () {
+  removeIcon.classList.remove('hide');
+  menuIcon.classList.add('hide');
+  overlay.classList.remove('hide');
+  menu.classList.add('open-nav');
+};
+const closeNav = function () {
+  removeIcon.classList.add('hide');
+  menuIcon.classList.remove('hide');
+  overlay.classList.add('hide');
+  menu.classList.remove('open-nav');
+};
 const options = {
   behavior: 'smooth',
 };
 signupBtn.addEventListener('click', function () {
   // SCROLLING
   if (menu.classList.contains('open-nav')) {
-    removeIcon.classList.add('hide');
-    menuIcon.classList.remove('hide');
-
-    menu.classList.remove('open-nav');
+    closeNav();
     section3.scrollIntoView(options);
   } else {
     section3.scrollIntoView(options);
@@ -34,14 +46,10 @@ btnxx.addEventListener('click', function () {
 
 btnSwitch.addEventListener('click', function () {
   if (removeIcon.classList.contains('hide')) {
-    removeIcon.classList.remove('hide');
-    menuIcon.classList.add('hide');
-
-    menu.classList.add('open-nav');
+    openNav();
   } else {
-    removeIcon.classList.add('hide');
-    menuIcon.classList.remove('hide');
-
-    menu.classList.remove('open-nav');
+    closeNav();
   }
 });
+
+overlay.addEventListener('click', closeNav);
